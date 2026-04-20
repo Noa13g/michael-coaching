@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programmes sportifs personnalisés — Michael Coaching Sportif</title>
+  <meta name="description" content="Programmes d’entraînement, nutrition personnalisée et suivi complet avec Michael Ahmeti, coach sportif à Marseille, Aix-en-Provence et en ligne.">
+  <meta property="og:title" content="Programmes sportifs personnalisés — Michael Coaching Sportif">
+  <meta property="og:description" content="Programmes d’entraînement, nutrition personnalisée et suivi complet avec Michael Ahmeti, coach sportif à Marseille, Aix-en-Provence et en ligne.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="../assets/images/hero-placeholder.svg">
+  <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html" aria-label="Accueil Michael Coaching Sportif">
+        <img src="../assets/logo.svg" alt="Logo Michael Coaching Sportif">
+        <span>Michael Coaching Sportif</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Navigation principale">
+        <a href="../index.html">Accueil</a>
+        <a href="programmes.html" class="is-active">Programmes</a>
+        <a href="seances.html">Séances</a>
+        <a href="about.html">À propos</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="cart-toggle" type="button" aria-label="Ouvrir le panier">Panier <span class="cart-count">0</span></button>
+        <a class="btn btn-primary btn-small" href="contact.html#bilan">Bilan gratuit</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero section">
+      <div class="container narrow fade-in">
+        <span class="eyebrow">Programmes & suivi</span>
+        <h1>Programmes personnalisés</h1>
+        <p>Choisis ton programme sportif, nutritionnel ou ton suivi complet selon tes objectifs.</p>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="filters fade-in" aria-label="Filtres des programmes">
+          <button class="filter-btn is-active" type="button" data-filter="all">Tous</button>
+          <button class="filter-btn" type="button" data-filter="entrainement">Entraînement</button>
+          <button class="filter-btn" type="button" data-filter="nutrition">Nutrition</button>
+          <button class="filter-btn" type="button" data-filter="packs">Packs</button>
+          <button class="filter-btn" type="button" data-filter="offre-complete">Offre complète</button>
+        </div>
+
+        <div class="products-grid">
+          <article class="product-card fade-in" data-category="entrainement">
+            <span class="badge">Entraînement</span>
+            <h2>Programme entraînement</h2>
+            <p class="price">80 €</p>
+            <p>Plan d’entraînement complet, 100% sur mesure, renouvelable selon ta progression.</p>
+            <ul class="check-list">
+              <li>Analyse de ton objectif</li>
+              <li>Programme adapté à ton niveau</li>
+              <li>Structure claire séance par séance</li>
+              <li>Renouvelable selon ta progression</li>
+            </ul>
+            <button class="btn btn-primary add-to-cart" type="button" data-name="Programme entraînement" data-price="80 €">Ajouter au panier</button>
+          </article>
+
+          <article class="product-card fade-in" data-category="nutrition">
+            <span class="badge">Nutrition</span>
+            <h2>Programme alimentaire</h2>
+            <p class="price">50 €</p>
+            <p>Plan nutritionnel personnalisé, adapté à ton objectif et à ton quotidien.</p>
+            <ul class="check-list">
+              <li>Objectif perte de poids, prise de masse ou recomposition</li>
+              <li>Plan clair et personnalisé</li>
+              <li>Ajustable selon ta progression</li>
+            </ul>
+            <button class="btn btn-primary add-to-cart" type="button" data-name="Programme alimentaire" data-price="50 €">Ajouter au panier</button>
+          </article>
+
+          <article class="product-card fade-in" data-category="nutrition packs">
+            <span class="badge">Pack nutrition</span>
+            <h2>Pack 3 programmes alimentaires</h2>
+            <p class="price">135 €</p>
+            <p class="subprice">45 € / programme</p>
+            <p>Économise 15 € avec 3 plans nutritionnels personnalisés.</p>
+            <button class="btn btn-primary add-to-cart" type="button" data-name="Pack 3 programmes alimentaires" data-price="135 €">Ajouter au panier</button>
+          </article>
+
+          <article class="product-card featured fade-in" data-category="nutrition packs">
+            <span class="badge badge-gold">Meilleure offre</span>
+            <h2>Pack 6 programmes alimentaires</h2>
+            <p class="price">250 €</p>
+            <p class="subprice">41,67 € / programme</p>
+            <p>Économise 50 € avec 6 plans nutritionnels personnalisés pour suivre ton évolution dans le temps.</p>
+            <button class="btn btn-primary add-to-cart" type="button" data-name="Pack 6 programmes alimentaires" data-price="250 €">Ajouter au panier</button>
+          </article>
+
+          <article class="product-card star-offer fade-in" data-category="offre-complete entrainement nutrition packs">
+            <div>
+              <span class="badge badge-gold">Offre complète</span>
+              <h2>Suivi Complet 1 Mois</h2>
+              <p class="price">350 €</p>
+              <p class="subprice">par mois · sans engagement · partout en France</p>
+              <p>L’accompagnement le plus complet pour être encadré chaque semaine sur ton entraînement, ta nutrition et tes ajustements.</p>
+            </div>
+            <div class="pillars" aria-label="Piliers de l'offre">
+              <span>Entraînement</span>
+              <span>Nutrition</span>
+              <span>Check-in visio</span>
+            </div>
+            <div>
+              <h3>Ce qui est inclus</h3>
+              <ul class="check-list">
+                <li>Programme d’entraînement sur mesure</li>
+                <li>Plan nutritionnel personnalisé</li>
+                <li>1 check-in visio par semaine</li>
+                <li>Suivi & ajustements continus</li>
+                <li>Déplacement à domicile inclus sur demande</li>
+              </ul>
+            </div>
+            <button class="btn btn-primary btn-large add-to-cart" type="button" data-name="Suivi Complet 1 Mois" data-price="350 €">Je veux ce suivi</button>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <aside class="cart-panel" aria-hidden="true" aria-labelledby="cart-title">
+    <div class="cart-panel-inner">
+      <div class="cart-head">
+        <h2 id="cart-title">Panier</h2>
+        <button class="cart-close" type="button" aria-label="Fermer le panier">×</button>
+      </div>
+      <div class="cart-items"></div>
+      <div class="cart-empty">Ton panier est vide.</div>
+      <div class="cart-actions">
+        <a class="btn btn-primary whatsapp-checkout" href="https://wa.me/33625187472" target="_blank" rel="noopener">Finaliser par WhatsApp</a>
+        <button class="btn btn-outline cart-clear" type="button">Vider le panier</button>
+      </div>
+    </div>
+  </aside>
+  <div class="cart-overlay" aria-hidden="true"></div>
+  <div class="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Michael Coaching Sportif</strong>
+        <p>Coach sportif · Préparation physique · Nutrition</p>
+        <p>Marseille / Aix-en-Provence · Coaching en ligne partout en France</p>
+      </div>
+      <nav aria-label="Navigation pied de page">
+        <a href="../index.html">Accueil</a>
+        <a href="programmes.html">Programmes</a>
+        <a href="seances.html">Séances</a>
+        <a href="about.html">À propos</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://www.instagram.com/michael.coachingsportif/" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+      <div class="footer-legal">
+        <p>© 2026 Michael Coaching Sportif. Tous droits réservés.</p>
+        <p>Site vitrine — prestations personnalisées sur demande.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/filters.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & bilan gratuit — Michael Coaching Sportif</title>
+  <meta name="description" content="Contactez Michael Ahmeti pour un bilan gratuit, une séance de coaching sportif, un programme personnalisé ou un suivi nutrition à Marseille, Aix ou en ligne.">
+  <meta property="og:title" content="Contact & bilan gratuit — Michael Coaching Sportif">
+  <meta property="og:description" content="Contactez Michael Ahmeti pour un bilan gratuit, une séance de coaching sportif, un programme personnalisé ou un suivi nutrition à Marseille, Aix ou en ligne.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="../assets/images/hero-placeholder.svg">
+  <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html" aria-label="Accueil Michael Coaching Sportif">
+        <img src="../assets/logo.svg" alt="Logo Michael Coaching Sportif">
+        <span>Michael Coaching Sportif</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Navigation principale">
+        <a href="../index.html">Accueil</a>
+        <a href="programmes.html">Programmes</a>
+        <a href="seances.html">Séances</a>
+        <a href="about.html">À propos</a>
+        <a href="contact.html" class="is-active">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="cart-toggle" type="button" aria-label="Ouvrir le panier">Panier <span class="cart-count">0</span></button>
+        <a class="btn btn-primary btn-small" href="#bilan">Bilan gratuit</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="bilan" class="page-hero section">
+      <div class="container narrow fade-in">
+        <span class="eyebrow">Contact direct</span>
+        <h1>Contact & bilan gratuit</h1>
+        <p>Explique ton objectif et Michael te recontactera pour te proposer l’accompagnement le plus adapté.</p>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container contact-grid">
+        <form class="contact-form fade-in" action="mailto:michael.coachingsportif@gmail.com" method="post" enctype="text/plain">
+          <div class="form-row">
+            <label for="name">Nom</label>
+            <input id="name" name="Nom" type="text" autocomplete="name" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="Email" type="email" autocomplete="email" required>
+          </div>
+          <div class="form-row">
+            <label for="phone">Téléphone</label>
+            <input id="phone" name="Telephone" type="tel" autocomplete="tel">
+          </div>
+          <div class="form-row">
+            <label for="goal">Objectif</label>
+            <select id="goal" name="Objectif" required>
+              <option value="">Choisir un objectif</option>
+              <option>Perte de poids</option>
+              <option>Prise de muscle</option>
+              <option>Remise en forme</option>
+              <option>Préparation physique</option>
+              <option>Nutrition</option>
+              <option>Coaching entreprise</option>
+              <option>Autre</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="Message" rows="6" required></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Envoyer ma demande</button>
+          <p class="form-confirmation" role="status" aria-live="polite"></p>
+        </form>
+
+        <aside class="contact-card fade-in">
+          <h2>Contact direct</h2>
+          <dl>
+            <div>
+              <dt>Téléphone</dt>
+              <dd><a href="tel:+33625187472">06 25 18 74 72</a></dd>
+            </div>
+            <div>
+              <dt>Email</dt>
+              <dd><a href="mailto:michael.coachingsportif@gmail.com">michael.coachingsportif@gmail.com</a></dd>
+            </div>
+            <div>
+              <dt>Localisation</dt>
+              <dd>Marseille / Aix-en-Provence</dd>
+            </div>
+            <div>
+              <dt>Instagram</dt>
+              <dd><a href="https://www.instagram.com/michael.coachingsportif/" target="_blank" rel="noopener">@michael.coachingsportif</a></dd>
+            </div>
+          </dl>
+          <a class="btn btn-whatsapp whatsapp-link" href="https://wa.me/33625187472?text=Bonjour%20Michael%2C%20je%20souhaite%20%C3%A9changer%20avec%20vous%20au%20sujet%20d%27un%20accompagnement.%20Pouvez-vous%20me%20recontacter%20%3F" target="_blank" rel="noopener">Écrire sur WhatsApp</a>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <aside class="cart-panel" aria-hidden="true" aria-labelledby="cart-title">
+    <div class="cart-panel-inner">
+      <div class="cart-head">
+        <h2 id="cart-title">Panier</h2>
+        <button class="cart-close" type="button" aria-label="Fermer le panier">×</button>
+      </div>
+      <div class="cart-items"></div>
+      <div class="cart-empty">Ton panier est vide.</div>
+      <div class="cart-actions">
+        <a class="btn btn-primary whatsapp-checkout" href="https://wa.me/33625187472" target="_blank" rel="noopener">Finaliser par WhatsApp</a>
+        <button class="btn btn-outline cart-clear" type="button">Vider le panier</button>
+      </div>
+    </div>
+  </aside>
+  <div class="cart-overlay" aria-hidden="true"></div>
+  <div class="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Michael Coaching Sportif</strong>
+        <p>Coach sportif · Préparation physique · Nutrition</p>
+        <p>Marseille / Aix-en-Provence · Coaching en ligne partout en France</p>
+      </div>
+      <nav aria-label="Navigation pied de page">
+        <a href="../index.html">Accueil</a>
+        <a href="programmes.html">Programmes</a>
+        <a href="seances.html">Séances</a>
+        <a href="about.html">À propos</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://www.instagram.com/michael.coachingsportif/" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+      <div class="footer-legal">
+        <p>© 2026 Michael Coaching Sportif. Tous droits réservés.</p>
+        <p>Site vitrine — prestations personnalisées sur demande.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

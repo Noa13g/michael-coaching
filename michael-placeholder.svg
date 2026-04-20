@@ -1,0 +1,11 @@
+<svg width="720" height="880" viewBox="0 0 720 880" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Portrait placeholder Michael Ahmeti</title>
+  <desc id="desc">Silhouette sombre avec accents dores pour remplacer par une photo reelle.</desc>
+  <rect width="720" height="880" rx="22" fill="#0a0a0a"/>
+  <rect x="26" y="26" width="668" height="828" rx="18" fill="#0d0d0d" stroke="rgba(255,255,255,.10)" stroke-width="2"/>
+  <circle cx="360" cy="260" r="126" fill="#141414" stroke="#f5c842" stroke-width="5"/>
+  <path d="M186 744c28-170 110-254 174-254s146 84 174 254H186Z" fill="#141414" stroke="rgba(245,200,66,.62)" stroke-width="5"/>
+  <path d="M393 118 298 328h65l-29 144 103-216h-70l26-138Z" fill="#f5c842"/>
+  <text x="360" y="784" text-anchor="middle" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="36" font-weight="800">MICHAEL AHMETI</text>
+  <text x="360" y="826" text-anchor="middle" fill="#888888" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="600">Coach sportif diplome d'Etat</text>
+</svg>
