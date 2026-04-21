@@ -260,6 +260,11 @@ main {
   gap: 56px;
 }
 
+.hero-content {
+  align-self: start;
+  padding-top: 28px;
+}
+
 .hero h1,
 .page-hero h1,
 .about-hero h1 {
