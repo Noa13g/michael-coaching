@@ -72,6 +72,10 @@
     padding-bottom: 56px;
   }
 
+  .hero-content {
+    margin-top: 0;
+  }
+
   .hero-grid,
   .about-grid,
   .contact-grid {
@@ -128,6 +132,10 @@
   .hero {
     padding-top: 18px;
     padding-bottom: 42px;
+  }
+
+  .hero-content {
+    margin-top: 0;
   }
 
   .section-tight {
