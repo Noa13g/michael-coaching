@@ -249,7 +249,7 @@ main {
   min-height: auto;
   display: flex;
   align-items: flex-start;
-  padding-top: 0;
+  padding-top: 18px;
   padding-bottom: 72px;
 }
 
@@ -264,7 +264,7 @@ main {
 
 .hero-content {
   align-self: start;
-  margin-top: -140px;
+  margin-top: -40px;
 }
 
 .hero h1,
