@@ -308,11 +308,34 @@ main {
   border-radius: var(--radius);
 }
 
+.hero-embed {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.instagram-embed-wrap {
+  min-height: 640px;
+  padding: 16px;
+  border-radius: var(--radius);
+  background: #050505;
+}
+
+.instagram-embed-wrap blockquote.instagram-media {
+  min-width: 100% !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  border-radius: var(--radius) !important;
+  background: #050505 !important;
+}
+
+.instagram-embed-wrap iframe {
+  border-radius: var(--radius) !important;
+}
+
 .visual-badges {
-  position: absolute;
-  left: 30px;
-  right: 30px;
-  bottom: 30px;
+  position: static;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
