@@ -33,6 +33,8 @@
       var categories = (card.dataset.category || "").split(" ");
       var shouldShow = filter === "all" || categories.indexOf(filter) !== -1;
       card.hidden = !shouldShow;
+      card.classList.toggle("is-hidden", !shouldShow);
+      card.style.display = shouldShow ? "" : "none";
     });
 
     var url = new URL(window.location.href);

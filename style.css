@@ -455,6 +455,10 @@ main {
   gap: 14px;
 }
 
+.product-card.is-hidden {
+  display: none !important;
+}
+
 .product-card.compact {
   min-height: 260px;
 }
