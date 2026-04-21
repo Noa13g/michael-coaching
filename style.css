@@ -339,6 +339,16 @@ main {
   color: var(--gold);
 }
 
+.badge-link {
+  transition: background .2s ease, border-color .2s ease, color .2s ease, transform .2s ease;
+}
+
+.badge-link:hover {
+  background: rgba(245,200,66,.14);
+  border-color: rgba(245,200,66,.48);
+  transform: translateY(-1px);
+}
+
 .badge-gold {
   background: var(--gold);
   color: var(--black);

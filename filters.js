@@ -1,12 +1,47 @@
 (function () {
   "use strict";
 
-  function qs(selector, scope) {
-    return (scope || document).querySelector(selector);
+  function normalizeFilter(value) {
+    var aliases = {
+      entrainement: "entrainement",
+      entrainements: "entrainement",
+      nutrition: "nutrition",
+      pack: "packs",
+      packs: "packs",
+      "pack-nutrition": "packs",
+      "offre-complete": "offre-complete",
+      complete: "offre-complete",
+      all: "all",
+      tous: "all"
+    };
+
+    return aliases[value] || "all";
   }
 
   function qsa(selector, scope) {
     return Array.prototype.slice.call((scope || document).querySelectorAll(selector));
+  }
+
+  function applyFilter(filter, filters, cards) {
+    filters.forEach(function (item) {
+      var isActive = item.dataset.filter === filter;
+      item.classList.toggle("is-active", isActive);
+      item.setAttribute("aria-pressed", String(isActive));
+    });
+
+    cards.forEach(function (card) {
+      var categories = (card.dataset.category || "").split(" ");
+      var shouldShow = filter === "all" || categories.indexOf(filter) !== -1;
+      card.hidden = !shouldShow;
+    });
+
+    var url = new URL(window.location.href);
+    if (filter === "all") {
+      url.searchParams.delete("filter");
+    } else {
+      url.searchParams.set("filter", filter);
+    }
+    window.history.replaceState({}, "", url.toString());
   }
 
   document.addEventListener("DOMContentLoaded", function () {
@@ -15,24 +50,13 @@
     if (!filters.length || !cards.length) return;
 
     filters.forEach(function (button) {
+      button.setAttribute("aria-pressed", button.classList.contains("is-active") ? "true" : "false");
       button.addEventListener("click", function () {
-        var filter = button.dataset.filter || "all";
-
-        filters.forEach(function (item) {
-          item.classList.toggle("is-active", item === button);
-        });
-
-        cards.forEach(function (card) {
-          var categories = (card.dataset.category || "").split(" ");
-          var shouldShow = filter === "all" || categories.indexOf(filter) !== -1;
-          card.hidden = !shouldShow;
-        });
-
-        var grid = qs(".products-grid");
-        if (grid) {
-          grid.setAttribute("data-active-filter", filter);
-        }
+        applyFilter(normalizeFilter(button.dataset.filter || "all"), filters, cards);
       });
     });
+
+    var initial = normalizeFilter(new URLSearchParams(window.location.search).get("filter") || "all");
+    applyFilter(initial, filters, cards);
   });
 })();

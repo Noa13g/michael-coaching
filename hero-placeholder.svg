@@ -8,6 +8,7 @@
   <path d="M525 158 388 456h95l-43 206 149-308h-103l39-196Z" fill="#f5c842"/>
   <path d="M177 777h606" stroke="rgba(255,255,255,.13)" stroke-width="6" stroke-linecap="round"/>
   <path d="M236 833h488" stroke="rgba(245,200,66,.55)" stroke-width="6" stroke-linecap="round"/>
-  <text x="480" y="909" text-anchor="middle" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800">MICHAEL COACHING</text>
-  <text x="480" y="962" text-anchor="middle" fill="#888888" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="600">Photo a remplacer</text>
+  <rect x="214" y="878" width="532" height="76" rx="18" fill="#141414" stroke="rgba(255,255,255,.08)" stroke-width="2"/>
+  <path d="M268 916h424" stroke="rgba(245,200,66,.32)" stroke-width="5" stroke-linecap="round"/>
+  <path d="M304 916h112" stroke="rgba(255,255,255,.2)" stroke-width="5" stroke-linecap="round"/>
 </svg>
