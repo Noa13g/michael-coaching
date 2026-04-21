@@ -177,8 +177,22 @@
     margin-top: 0;
   }
 
+  .instagram-preview img {
+    min-height: 520px;
+  }
+
   .visual-badges span {
     width: 100%;
+  }
+
+  .instagram-preview img {
+    min-height: 400px;
+  }
+
+  .instagram-preview-overlay {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
   }
 
   .stats-grid,

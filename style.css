@@ -314,24 +314,65 @@ main {
   gap: 14px;
 }
 
-.instagram-embed-wrap {
-  min-height: 640px;
-  padding: 16px;
+.instagram-preview {
+  position: relative;
+  display: block;
+  overflow: hidden;
   border-radius: var(--radius);
   background: #050505;
 }
 
-.instagram-embed-wrap blockquote.instagram-media {
-  min-width: 100% !important;
-  width: 100% !important;
-  max-width: 100% !important;
-  margin: 0 !important;
-  border-radius: var(--radius) !important;
-  background: #050505 !important;
+.instagram-preview img {
+  width: 100%;
+  min-height: 640px;
+  object-fit: cover;
 }
 
-.instagram-embed-wrap iframe {
-  border-radius: var(--radius) !important;
+.instagram-preview-overlay {
+  position: absolute;
+  inset: auto 18px 18px 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, rgba(10,10,10,.78), rgba(10,10,10,.96));
+  backdrop-filter: blur(10px);
+}
+
+.play-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 999px;
+  background: var(--gold);
+  flex: 0 0 auto;
+}
+
+.play-icon {
+  width: 0;
+  height: 0;
+  margin-left: 3px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 16px solid var(--black);
+}
+
+.instagram-preview-copy {
+  display: grid;
+  gap: 3px;
+}
+
+.instagram-preview-copy strong {
+  font-size: 1.02rem;
+}
+
+.instagram-preview-copy span {
+  color: rgba(255,255,255,.72);
+  font-weight: 650;
 }
 
 .visual-badges {
