@@ -246,9 +246,9 @@ main {
 }
 
 .hero {
-  min-height: calc(100vh - var(--header-height));
+  min-height: auto;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .hero-grid,
@@ -256,7 +256,7 @@ main {
 .contact-grid {
   display: grid;
   grid-template-columns: 1.05fr .95fr;
-  align-items: center;
+  align-items: start;
   gap: 56px;
 }
 
