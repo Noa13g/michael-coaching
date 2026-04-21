@@ -249,6 +249,8 @@ main {
   min-height: auto;
   display: flex;
   align-items: flex-start;
+  padding-top: 36px;
+  padding-bottom: 72px;
 }
 
 .hero-grid,
@@ -262,7 +264,6 @@ main {
 
 .hero-content {
   align-self: start;
-  padding-top: 28px;
 }
 
 .hero h1,

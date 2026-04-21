@@ -68,6 +68,8 @@
 
   .hero {
     min-height: auto;
+    padding-top: 24px;
+    padding-bottom: 56px;
   }
 
   .hero-grid,
@@ -121,6 +123,11 @@
 
   .section {
     padding: 64px 0;
+  }
+
+  .hero {
+    padding-top: 18px;
+    padding-bottom: 42px;
   }
 
   .section-tight {
